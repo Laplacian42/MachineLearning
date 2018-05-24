@@ -5,8 +5,8 @@
 %--------------------------------------------------------------------------
 
 %First load the training set into matlab
-pathtomatTrain = fullfile(pwd,'TrainingSet','testimagesAsMatlab.mat');
-theTruthTrain  = fullfile(pwd,'TrainingSet','Results.xlsx');
+pathtomatTrain = fullfile(pwd,'Training','testimagesAsMatlab.mat');
+theTruthTrain  = fullfile(pwd,'Training','Results.xlsx');
 load(pathtomatTrain);
 
 [NUM,TXT,RAW]=xlsread(theTruthTrain);
@@ -36,8 +36,8 @@ z=tic;
 %--------------------------------------------------------------------------
  
 % Validate the svm
-pathtomatVal = fullfile(pwd,'ValidationSet','testimagesAsMatlab.mat');
-theTruthVal  = fullfile(pwd,'ValidationSet','Results.xlsx');
+pathtomatVal = fullfile(pwd,'Validation','testimagesAsMatlab.mat');
+theTruthVal  = fullfile(pwd,'Validation','Results.xlsx');
 load(pathtomatVal);
 
 [NUM,TXT,RAW]=xlsread(theTruthVal);
